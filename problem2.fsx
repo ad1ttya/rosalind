@@ -1,0 +1,4 @@
+//Transcribing DNA into RNA
+
+let DNASeq = "GACTTAGGGAGTGTCTGGCACCAGTCAGTGTACTGACTACACTGAC"
+let RNASeq = DNASeq.Replace("T", "U")
