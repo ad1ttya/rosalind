@@ -1,3 +1,5 @@
+// Complementing a Strand of DNA
+
 let DNASeq = "CTGAGATAGTGGAACATGCACTGGGGTGCTGGCGCGCATGGG"
 
 type DNA = A | G | C | T
