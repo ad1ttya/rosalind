@@ -1,2 +1,3 @@
-# rosalind
-Solution to rosalind bioinformatics problems in F#
+# Rosalind
+
+Solution to rosalind.info bioinformatics problems in F#
