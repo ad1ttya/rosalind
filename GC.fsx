@@ -1,4 +1,4 @@
-// Computing GC Content
+// Computing GC Content file: rosalind_gc.txt
 
 open System
 open System.IO
@@ -8,7 +8,7 @@ let sample = File.ReadAllText "data/rosalind_gc.txt"
 let inputs = sample.Split '>' |> Array.tail |> Array.map (fun i ->
     let data = i.Trim()
     let id = data.Remove(13)
-    let sequence = data.Substring(14).Replace(System.Environment.NewLine, "").Normalize() //Newlines are the devil!!! :O
+    let sequence = data.Substring(14).Replace(System.Environment.NewLine, "") //Newlines are the devil!!! :O
     (id, sequence))
 
 let gcContent = inputs |> Array.map (fun (id, sequence) ->
